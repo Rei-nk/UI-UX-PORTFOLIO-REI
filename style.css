@@ -1,0 +1,45 @@
+/* ═══════════════════════════════════════
+   REI DESIGNARY — style.css
+   ═══════════════════════════════════════ */
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #121414;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5f1f;
+  border-radius: 10px;
+}
+
+/* ── Fade-in Animation ── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* ── Glassmorphism Card ── */
+.glass-card {
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: #ff5f1f;
+  box-shadow: 0 0 20px rgba(255, 95, 31, 0.2);
+  transform: translateY(-4px);
+}

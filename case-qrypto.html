@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>QryptoPay | Case Study</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .reveal-up { opacity: 0; transform: translateY(50px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .reveal-up.active { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-[#0B0B0F] text-white selection:bg-[#FF5F1F]/30 relative">
+
+  <header class="bg-[#0B0B0F]/80 backdrop-blur-xl border-b border-white/10 top-0 sticky z-50">
+    
+  </header>
+
+  <div class="fixed bottom-0 right-6 md:right-12 z-40 hidden md:flex flex-col items-center gap-5">
+    <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-[#FF5F1F] hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+    <a href="https://www.linkedin.com/in/rei-designary-012307371" target="_blank" class="text-gray-400 hover:text-[#FF5F1F] hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    <a href="https://www.instagram.com/rei_designary/" target="_blank" class="text-gray-400 hover:text-[#FF5F1F] hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="mailto:Wahyureihan20@gmail.com" class="text-gray-400 hover:text-[#FF5F1F] hover:-translate-y-1 transition-all duration-300"><span class="material-symbols-outlined text-xl">mail</span></a>
+    <div class="w-[1px] h-24 bg-white/20 mt-4"></div>
+  </div>
+
+  <main class="max-w-[900px] mx-auto px-6 md:px-12 py-12 md:py-20">
+    <a href="index.html" class="inline-flex items-center gap-2 text-gray-400 hover:text-[#FF5F1F] transition-colors text-xs font-bold uppercase tracking-widest mb-10 md:mb-16">
+      <span class="material-symbols-outlined text-sm">arrow_back</span> BACK TO PORTFOLIO
+    </a>
+
+    <div class="mb-10 md:mb-14 reveal-up">
+      <div class="flex items-center gap-3 mb-4 flex-wrap">
+        <span class="px-3 py-1 bg-[#FF5F1F]/10 text-[#FF5F1F] text-[10px] font-bold uppercase tracking-wider rounded-full">FINTECH</span>
+        <span class="px-3 py-1 bg-[#FF5F1F]/10 text-[#FF5F1F] text-[10px] font-bold uppercase tracking-wider rounded-full">MOBILE APP</span>
+        <span class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-[#FF5F1F] italic">
+          <span class="material-symbols-outlined text-xs" style="font-variation-settings:'FILL' 1;">stars</span> Silver Medalist — International Design Competition
+        </span>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight text-white">QryptoPay — <span class="text-[#FF5F1F]">Where Crypto Meets Clarity.</span></h1>
+      <p class="text-gray-400 text-base md:text-lg leading-relaxed">An award-winning mobile app UI that makes crypto payments feel as familiar and trustworthy as paying with a debit card — designed for the next billion users entering the Web3 space.</p>
+    </div>
+    
+    <img src="assets/qrypto1.png" alt="QryptoPay Thumbnail" class="w-full rounded-2xl mb-12 md:mb-16 object-contain bg-[#1A1A24] border border-white/5 p-4 md:p-8 reveal-up aspect-video"/>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 md:mb-16">
+      <div class="bg-[#1A1A24] border border-white/5 rounded-xl p-4 md:p-6 text-center reveal-up" style="transition-delay: 100ms;">
+        <p class="text-[#FF5F1F] text-xs font-bold uppercase tracking-widest mb-1">ROLE</p>
+        <p class="text-white text-sm font-semibold">Lead UI/UX<br/>Designer & Frontend</p>
+      </div>
+      <div class="bg-[#1A1A24] border border-white/5 rounded-xl p-4 md:p-6 text-center reveal-up" style="transition-delay: 200ms;">
+        <p class="text-[#FF5F1F] text-xs font-bold uppercase tracking-widest mb-1">PLATFORM</p>
+        <p class="text-white text-sm font-semibold">iOS & Android<br/>Mobile App</p>
+      </div>
+      <div class="bg-[#1A1A24] border border-white/5 rounded-xl p-4 md:p-6 text-center reveal-up" style="transition-delay: 300ms;">
+        <p class="text-[#FF5F1F] text-xs font-bold uppercase tracking-widest mb-1">TOOLS</p>
+        <p class="text-white text-sm font-semibold">Figma & Flutter<br/>Prototipe</p>
+      </div>
+      <div class="bg-[#1A1A24] border border-white/5 rounded-xl p-4 md:p-6 text-center reveal-up" style="transition-delay: 400ms;">
+        <p class="text-[#FF5F1F] text-xs font-bold uppercase tracking-widest mb-1">AWARD</p>
+        <p class="text-white text-sm font-semibold">🥈 Silver Medal (Jan 2026)<br/>🥇Gold Medal (May 2026)</p>
+      </div>
+    </div>
+
+    <div class="space-y-12 md:space-y-16 text-gray-400 text-sm md:text-base leading-relaxed">
+      <div class="reveal-up">
+        <span class="text-[#FF5F1F] block mb-3 text-xs font-bold uppercase tracking-widest">01 — The Problem</span>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-4">Crypto Is Powerful. But Most Apps Make It Feel Terrifying.</h2>
+        <p>Crypto wallets and payment apps are notorious for their complexity — raw wallet addresses, volatile market dashboards, and security warnings that read like legal disclaimers. For the average user, these aren't tools; they're obstacles.</p>
+      </div>
+
+      <div class="reveal-up">
+        <span class="text-[#FF5F1F] block mb-3 text-xs font-bold uppercase tracking-widest">02 — User Research</span>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-4">Mapping Fear Points Across User Journeys</h2>
+        <p>I interviewed 12 potential users ranging from crypto beginners to intermediate traders. The top three pain points that emerged: fear of sending to the wrong address, confusion about transaction fees, and anxiety around price volatility during a payment flow.</p>
+      </div>
+
+      <div class="reveal-up">
+        <span class="text-[#FF5F1F] block mb-3 text-xs font-bold uppercase tracking-widest">03 — Design & Interfaces</span>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-6">Building Trust Through Visual Language</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="overflow-hidden rounded-xl bg-[#1A1A24] border border-white/5 p-4 flex items-center justify-center">
+            <img src="assets/qrypto2.png" alt="QryptoPay Review 1" class="w-full h-full aspect-video object-contain cursor-pointer hover:scale-105 transition-transform lightbox-trigger"/>
+          </div>
+          <div class="overflow-hidden rounded-xl bg-[#1A1A24] border border-white/5 p-4 flex items-center justify-center">
+            <img src="assets/qrypto3.png" alt="QryptoPay Review 2" class="w-full h-full aspect-video object-contain cursor-pointer hover:scale-105 transition-transform lightbox-trigger"/>
+          </div>
+          <div class="overflow-hidden rounded-xl bg-[#1A1A24] border border-white/5 p-4 flex items-center justify-center">
+            <img src="assets/qrypto4.png" alt="QryptoPay Review 3" class="w-full h-full aspect-video object-contain cursor-pointer hover:scale-105 transition-transform lightbox-trigger"/>
+          </div>
+          <div class="overflow-hidden rounded-xl bg-[#1A1A24] border border-white/5 p-4 flex items-center justify-center">
+            <img src="assets/qrypto5.png" alt="QryptoPay Review 4" class="w-full h-full aspect-video object-contain cursor-pointer hover:scale-105 transition-transform lightbox-trigger"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-up">
+        <span class="text-[#FF5F1F] block mb-3 text-xs font-bold uppercase tracking-widest">04 — Key Features</span>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-4">Designed for Confidence at Every Step</h2>
+        <ul class="space-y-3 mt-4">
+          <li class="flex gap-3"><span class="text-[#FF5F1F] mt-0.5">▸</span><span><strong class="text-white">Rate Lock Checkout:</strong> The exchange rate freezes for 60 seconds during payment confirmation — eliminating the fear of price slippage.</span></li>
+          <li class="flex gap-3"><span class="text-[#FF5F1F] mt-0.5">▸</span><span><strong class="text-white">Smart Address Book:</strong> QR scan, ENS name lookup, and saved contacts replace raw wallet addresses entirely.</span></li>
+          <li class="flex gap-3"><span class="text-[#FF5F1F] mt-0.5">▸</span><span><strong class="text-white">Fee Transparency:</strong> Network fees are shown in both crypto and fiat equivalents before any transaction is confirmed.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 md:mt-20 pt-10 border-t border-white/10 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between reveal-up">
+      <p class="text-gray-400 text-sm">Want to build a product users actually trust?</p>
+      <a href="index.html#contact" class="bg-[#FF5F1F] text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:shadow-[0_0_20px_#ff5f1f] transition-all">
+        LET'S WORK TOGETHER
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-[#0B0B0F] border-t border-white/5 py-8 mt-12">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 gap-4 max-w-[1440px] mx-auto">
+      <div class="flex flex-col gap-2 items-center md:items-start">
+        <span class="text-white text-lg font-bold">REI DESIGNARY</span>
+        <p class="text-gray-500 text-xs">© 2026 Wahyu Reihan Nur Khabib.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="fixed inset-0 z-[100] bg-[#0B0B0F]/95 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4 md:p-10 cursor-zoom-out">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-gray-400 hover:text-[#FF5F1F] transition-colors cursor-pointer z-50">
+      <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <img id="lightbox-img" src="" alt="Full Preview" class="max-w-full max-h-full rounded-xl shadow-2xl object-contain transform scale-95 transition-transform duration-300 cursor-default" />
+  </div>
+
+  <script>
+    // 1. Intersection Observer buat animasi muncul konten pas di scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { 
+        if (entry.isIntersecting) entry.target.classList.add('active'); 
+        else entry.target.classList.remove('active'); 
+      });
+    }, { root: null, threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+    document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
+
+    // 2. Logic Lightbox (Pop-up Gambar)
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        lightboxImg.src = trigger.src; 
+        lightbox.classList.remove('opacity-0', 'pointer-events-none');
+        lightbox.classList.add('opacity-100', 'pointer-events-auto');
+        setTimeout(() => lightboxImg.classList.replace('scale-95', 'scale-100'), 50); 
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('opacity-100', 'pointer-events-auto');
+      lightbox.classList.add('opacity-0', 'pointer-events-none');
+      lightboxImg.classList.replace('scale-100', 'scale-95');
+      setTimeout(() => lightboxImg.src = '', 300); 
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  </script>
+</body>
+</html>

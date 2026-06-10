@@ -1,8 +1,11 @@
-/* ═══════════════════════════════════════
-   REI DESIGNARY — tailwind.config.js
-   ═══════════════════════════════════════ */
-
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // Properti wajib biar compiler tahu file mana yang discan class-nya
+  content: [
+    "./*.html",
+    "./components/**/*.js",
+    "./src/**/*.js"
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -59,7 +62,7 @@ tailwind.config = {
         DEFAULT: '0.125rem',
         lg:      '0.25rem',
         xl:      '0.5rem',
-        full:    '0.75rem',
+        full:    '0.75rem', // Catatan: ini bakal nge-override rounded-full bawaan pil Tailwind jadi 12px
       },
       spacing: {
         'margin-desktop': '80px',
@@ -89,4 +92,5 @@ tailwind.config = {
       },
     },
   },
+  plugins: [],
 };

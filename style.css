@@ -2,6 +2,12 @@
    REI DESIGNARY — style.css
    ═══════════════════════════════════════ */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ... kode custom animation atau reveal-up lu yang lama biarin aja di bawahnya ... */
+
 /* ── Scrollbar ── */
 ::-webkit-scrollbar {
   width: 4px;

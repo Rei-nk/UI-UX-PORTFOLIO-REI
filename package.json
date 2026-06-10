@@ -1,0 +1,12 @@
+{
+  "name": "porto-web",
+  "version": "1.0.0",
+  "description": "Portfolio REI DESIGNARY",
+  "main": "index.html",
+  "scripts": {
+    "build-tw": "tailwindcss -i ./style.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
